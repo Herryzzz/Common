@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{D76F3D29-E7E4-4F00-93EF-1B8B033B33A4}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Herryz.Common</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web.Extensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Herryz.Common.Model\ResultEx.cs" />
+    <Compile Include="Herryz.Common.Model\ServerModel.cs" />
+    <Compile Include="Herryz.Common\CacheUtil.cs" />
+    <Compile Include="Herryz.Common\ChineseSpell.cs" />
+    <Compile Include="Herryz.Common\CookieUtil.cs" />
+    <Compile Include="Herryz.Common\CSVUtil.cs" />
+    <Compile Include="Herryz.Common\DataConfig.cs" />
+    <Compile Include="Herryz.Common\DateUtil.cs" />
+    <Compile Include="Herryz.Common\EncryptUtil.cs" />
+    <Compile Include="Herryz.Common\ExcelUtil.cs" />
+    <Compile Include="Herryz.Common\ExfRenderControl.cs" />
+    <Compile Include="Herryz.Common\FileUpload.cs" />
+    <Compile Include="Herryz.Common\FileUtil.cs" />
+    <Compile Include="Herryz.Common\HttpHelper.cs" />
+    <Compile Include="Herryz.Common\ServerUtil.cs" />
+    <Compile Include="System\UtilsIList.cs" />
+    <Compile Include="Herryz.Common\ImageUtil.cs" />
+    <Compile Include="Herryz.Common\JsonUtil.cs" />
+    <Compile Include="Herryz.Common\ModelCopier.cs" />
+    <Compile Include="Herryz.Common\ParamAction.cs" />
+    <Compile Include="Herryz.Common\RequestUtil.cs" />
+    <Compile Include="Herryz.Common\ResponseEx.cs" />
+    <Compile Include="Herryz.Common\SecurityUtil.cs" />
+    <Compile Include="Herryz.Common\SQLBulkCopy.cs" />
+    <Compile Include="Herryz.Common\SQLHelper.cs" />
+    <Compile Include="Herryz.Common\Types.cs" />
+    <Compile Include="Herryz.Common\UrlHelper.cs" />
+    <Compile Include="Herryz.Common\ValidateUtil.cs" />
+    <Compile Include="Herryz.Common\XMLUtil.cs" />
+    <Compile Include="Herryz.Common\ZipEx.cs" />
+    <Compile Include="System.Data\DataTableUtil.cs" />
+    <Compile Include="System\DateTimeExtensions.cs" />
+    <Compile Include="System\EnumExtensions.cs" />
+    <Compile Include="System\ObjectExtensions.cs" />
+    <Compile Include="System\Utils.cs" />
+    <Compile Include="System\UtilsInteger.cs" />
+    <Compile Include="System\UtilsString.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
